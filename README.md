@@ -23,3 +23,27 @@ github地址在[这里](https://github.com/robbyrussell/oh-my-zsh),[这里](http
 
 
 ![images](https://raw.githubusercontent.com/SunShinewyf/tools-setting/master/assets/3.png)
+
+### autojump
+
+- `autojump`使用
+    在命令行中可以随便跳转到某个目录，而不需要一次次地 `cd ./`,但是前提是你必须在此之前去到过这个目录，因为`autojump`中有一个文件存放着所有你去过的目录
+
+- `autojump`安装
+   - 安装包
+   ```js
+    $ brew install autojump
+   ```
+   - 修改`~/.zshrc`里面的`plugin`：
+   ```js
+    plugins=(git autojump)
+   ```
+   - 使配置生效
+   ```js
+    source ~/.zshrc
+   ```
+
+- 使用
+  ```js
+    j directory
+  ```
