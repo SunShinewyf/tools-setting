@@ -38,6 +38,10 @@ github地址在[这里](https://github.com/robbyrussell/oh-my-zsh),[这里](http
    ```js
     plugins=(git autojump)
    ```
+   然后继续在上述文件中添加:
+   ```js
+   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+   ```
    - 使配置生效
    ```js
     source ~/.zshrc
